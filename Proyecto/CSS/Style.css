@@ -1,0 +1,358 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+  text-decoration: none;  
+  color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: lightskyblue;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+        height: 70px;
+        margin-right: 10px;
+}   
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+Main{
+    width: 1000px;
+    height: 700px;
+    float: left;
+    background-color: blueviolet;
+    color: white;
+}
+
+Aside{
+    width: 519px;
+    height: 700px;
+    background-color: blueviolet;
+    float: right;
+    color: white;
+}
+
+Aside h3{
+    font-size: 40px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+footer{
+    clear: both;
+    width: 1550px;
+    height: 20px;
+    text-align: center;
+    background-color: lightskyblue;
+    float: center;
+    
+}
+
+/* Formulario */
+h1{
+    color: blue;
+    font-style: Palatino;
+}
+
+/* Contacto */
+
+.lista{
+    color: red;
+    list-style: none;
+}
+
+ /* Tarea Clase 4 */
+
+ .miformulario{
+    background-color: #A9F4DB;
+    text-align: center;
+ }
+
+ 
+
+ /* Tarea Clase 5 */
+
+.caja1 {
+    position: relative;
+    border-color: green;
+    background-color: lightgreen;
+    border-style: dotted;
+    width: 1480px;
+    height: 250px;
+    z-index: 5;
+    margin-left: 100px;
+}
+
+.caja2 {
+    position: relative;
+    border-color: green;
+    background-color: lightgreen;
+    border-style: dotted;
+    z-index: 2;
+    height: 250px;
+    width: 1480px;
+    margin-top: 570px;
+    margin-left: 100px;
+}
+
+.caja3 {
+    position: absolute; 
+    z-index: 4;
+    background-color: salmon;
+    border-style: dotted;
+    border-color: red;
+    margin-left: 600px;
+    width: 1020px;
+    height: 1000px;
+    top: 60px;
+}
+
+.caja4 {
+    position: relative;
+    border-color: yellow;
+    background-color: lightgoldenrodyellow;
+    border-style: dotted;
+    z-index: 6;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-left: 50px;
+    height: 200px;
+    width: 910px;
+}
+
+.caja5 {
+    position: relative;
+    border-color: yellow;
+    background-color: lightgoldenrodyellow;
+    border-style: dotted;
+    z-index: 1;
+    height: 200px;
+    width: 910px;
+    margin-top: 350px;
+    margin-left: 50px;
+}
+
+.caja6 {
+    position: absolute;
+    background-color: lightblue ;
+    border-style: dotted;
+    z-index: 3;
+    border-color: blue;
+    height: 750px;
+    width: 350px;
+    margin-left: 570px;
+    margin-top: 150px;
+}
+
+
+ /* Ejemplo clase */
+
+ .fg {
+    display: grid;
+    grid-template-columns: 700px 700px;
+ }
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+article {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+footer {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+ /* Tarea clase 6 */
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-content: space-between;
+    gap: 5px;
+    background-color: gray;
+}
+
+.Box1{
+    width: 900px;
+    height: 200px;
+    background-color: lightgreen;
+    float: left;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+.Box2{
+    width: 540px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: 25px;
+    margin-top: 100px;
+    float: right;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 700px 700px;
+    align-content: stretch;
+}
+
+.Box3 {
+    width: 640px;
+    height: 600px;
+    background-color: lightgreen;
+    margin-left: 25px;
+    float: left;
+    margin-top: 25px;
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 25px;
+}
+
+.Box4 {
+    width: 795px;
+    height: 285px;
+    background-color: lightgreen;
+    margin-top: 25px;
+    float: right;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.Box5 {
+    width: 795px;
+    height: 285px;
+    background-color: lightgreen;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 297px;
+}
+
+.Box6 {
+    background-color: greenyellow;
+    width: 300px;
+    height: 100px;
+    flex-grow: 1;
+    margin-left: 25px;
+    float: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.Box7 {
+    background-color: greenyellow;
+    width: 600px;
+    height: 100px;
+    flex-grow: 1,5;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.Box8 {
+    background-color: greenyellow;
+    width: 300px;
+    height: 100px;
+    flex-grow: 1;
+    margin-right: 25px;
+    float: right;
+    margin-top: 25px;
+}
+
+
+ /* Tarea Clase 8 */
+
+.contenedor{
+    background-color: blueviolet;
+}
+
+h2{
+    margin-top: 25px;
+    font-style: italic;
+    color: lightskyblue;
+    margin-left: 10px;
+}
+
+#Texto1{
+    width: 80%;
+    float: left;
+    font-family: Verdana;
+    font-size: 110%;
+    text-align: justify;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#p_texto1{
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 25px;
+}
+
+#imagen1{
+    width: 20%;
+    float: right;
+    margin-right: 190px;
+    background-color: blueviolet;
+    margin-top: 25px;
+}
+
+#separacion{
+    clear: both;
+}
+
+#texto2{
+    width: 75%;
+    float: right;
+    font-size: 145%;
+    text-align: justify;
+}
+
+#p_texto2{
+    text-align: center;
+}
+
+#imagen2{
+    width: 25%;
+    float: left;
+    margin-left: 50px;
+}
+
+

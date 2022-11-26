@@ -1,16 +1,24 @@
-// TAREA CLASE 9
-
-alert(Hello_world);
-
 // VARIABLES
+// una variable es un contenedor de informacion
 
-let pais = "España";
-let continente = "Europa";
-let antiguedad = "2021";
-let pais_y_continente = pais + " " + continente;
+let Evento  
+            {
+            Evento = "Mundial de futbol"
+            pais_organizador = "Qatar";
+            continente_organizador = "Asia";
+            año = "2022";
+            participantes = "32 selecciones"
+            Cantidad_de_grupos = "8"
+}
 
-pais = "Mexico";
-continente = "Latinoamerica";
+let pais_organizador_y_continente_organizador = pais_organizador + " " + continente_organizador;
 
-console.log(pais, continente, antiguedad);
-alert(pais_y_continente);
+let Nuestra_seleccion
+                    {
+                    pais = "Argentina";
+                    continente = "Latinoamerica";
+                    grupo = "C"
+                }
+
+console.log(pais_organizador, continente_organizador, año, participantes, cantidad_de_grupos);
+alert(Evento, pais_organizador);

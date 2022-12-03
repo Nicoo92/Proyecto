@@ -32,6 +32,16 @@ console.log(concatenaNumeros);
 var age = prompt("Cual es tu edad:?");
 console.log(age);
 
+var nombres = prompt("Cual es tu nombre:?");
+console.log(nombres);
+
+console.warn("Nombre");
+console.warn("Edad");
+
+
+// Quinto ejercicio
+// una variable es un contenedor de informacion
+
 let edad;
 edad = prompt("Introduce tu edad");
 
@@ -41,8 +51,26 @@ if (edad >= 18) {
     alert("No puedes entrar, eres menor de edad");
 }
 
-// Cuarto ejercicio
+// Sexto ejercicio
 // una variable es un contenedor de informacion
 
 let sexo;
-sexo = prompt("Introduce tu sexo");
+sexo = prompt("Introduce tu sexo (H=Hombre y M=Mujer)");
+
+if (sexo == "H"){
+    alert("Eres un hombre");
+} else if (sexo == "M") {
+    alert("Eres una mujer");
+}
+
+if (sexo == "M">=20) {
+    alert("Puedes entrar")
+} else {
+    alert("No puedes entrar")
+}
+
+if (sexo == "H">=18) {
+    alert("Puedes entrar")
+} else {
+    alert("No puedes entrar")
+}
